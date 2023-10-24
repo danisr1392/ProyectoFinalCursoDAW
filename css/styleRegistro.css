@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Sans:ital,wght@1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.background-area{
+    position: relative;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./imagenes/background-menu.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 20%;
+}
+
+.background-area h1{
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: .75cap;
+}
+
+.background-capa{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+    position: absolute;
+}
+
+.menu{
+    padding: 40px 0;
+}
+
+.menu .option-menu{
+    margin: 0 40px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.menu .option-menu .menu-link{
+    width: 172px;
+    height: 44px;
+    margin-top: 8%;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menu .option-menu .menu-link:hover{
+    background-color: white;
+    color: purple;
+}
+
+/********************/
+/*****FORMULARIO*****/
+/********************/
+
+.content-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-registro{
+    background-color: mediumslateblue;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.form-registro h1{
+    padding-bottom: 30px;
+}
+
+.form-registro label{
+    color: purple;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.form-registro input{
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 3px 3px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+}
+
+.form-registro input::placeholder{
+    color: whitesmoke;
+}
+
+.form-registro select{
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 10px 3px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+}
+
+.form-registro select option{
+    background-color: mediumslateblue;
+}
+
+.form-registro input:focus{
+    border-bottom: 2px solid whitesmoke;
+}
+
+.form-registro .iniSesion{
+    margin-top: 40px;
+}
+
+.form-registro .iniSesion-link{
+    text-decoration: none;
+    color: white;
+    transition: .5s all;
+}
+
+.form-registro .iniSesion-link:hover{
+    text-decoration: underline;
+}
+
+.button-reg{
+    width: 100%;
+    height: 44px;
+    margin-top: 60px;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button-reg:hover{
+    background-color: black;
+    color: purple;
+}
+
+@media (max-width: 954px){
+
+    body{
+        z-index: 0;
+    }
+
+    .background-area{
+        width: auto;
+        height: 1000px;
+        background-image: url(./imagenes/background-menu.jpg);
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 40%;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    
+    .menu .option-menu .menu-link{
+        width: 172px;
+        height: 44px;
+        margin-top: 8%;
+        border-radius: 45px;
+        background-color: purple;
+        color: white;
+        padding: 10px 45px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .menu .option-menu .menu-link:hover{
+        background-color: white;
+        color: purple;
+    }
+
+    .content-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 50%;
+        height: auto;
+        top: 0px;
+    }
+
+    .content-area h1{
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: .75cap;
+    }
+
+    .form-registro{
+        background-color: mediumslateblue;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-registro input{
+        width: 90%;
+        border: none;
+        background: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        padding: 3px 3px;
+        color: white;
+    }
+    
+    .form-registro input:focus{
+        border-bottom: 2px solid white;
+    }
+}

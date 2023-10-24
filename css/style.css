@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Sans:ital,wght@1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.banner-area{
+    position: relative;
+    min-height: 955px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../css/imagenes/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.capa-banner{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+    position: absolute;
+}
+
+.header-area{
+    width: 100%;
+    padding: 15px 0;
+    background-color: mediumslateblue;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid white;
+}
+
+.nav-area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.scroll{
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 54px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    color: black;
+    border: 2px solid black;
+    background-color: purple;;
+    z-index: 5;
+    text-align: center;
+    line-height: 38px;
+    transition: all .5s ease-in-out;
+    transition-duration: 500ms;
+    border-radius: 6px;
+}
+
+.scroll:hover{
+    background-color: white;
+    color: purple;
+    border: 2px solid black;
+}
+
+#check{
+    display: none;
+}
+
+/********************/
+/*******MENÚ*******/
+/********************/
+
+.menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.menu .option-menu{
+    font-size: 26px;
+    margin: 0 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo-menu{
+    width: 250px;
+    height: 150px;
+    margin: 0 30px;
+}
+
+.menu .option-menu .menu-link{
+    text-decoration: none;
+    color: purple;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+
+.menu .option-menu .menu-link:hover{
+    color: white;
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, .35);
+    border-radius: 8px;
+    background-color: mediumpurple;
+}
+
+.button-menu{
+    width: 172px;
+    height: 44px;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+    white-space: nowrap;
+}
+
+.user-menu{
+    width: 150px;
+    height: 44px;
+    border-radius: 45px;
+    margin-top: 80px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.user-menu:hover{
+    background-color: white;
+    color: purple;
+}
+
+.button-menu:hover{
+    background-color: white;
+    color: purple;
+}
+
+.icono-menu{
+    font-size: 25px;
+    color: purple;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+/********************/
+/*******SLIDER*******/
+/********************/
+
+.slider-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 10%;
+}
+
+.text-slider{
+    margin-bottom: 75px;
+}
+
+.text-slider p{
+    width: 70%;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+    color: white;
+    margin-top: 16px;
+    position: unset;
+}
+
+.text-slider h1{
+  margin: 0;
+  font-size: 57px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: mediumslateblue;
+}
+
+.select-slider{
+    display: flex;
+    position: unset;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.select-slider li{
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 100%;
+    list-style: none;
+    text-indent: -999px;
+    margin-top: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.select-slider .active-slider{
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 100%;
+    list-style: none;
+    text-indent: -999px;
+    margin-top: 40px;
+    margin-left: 3px;
+    margin-right: 3px;
+    opacity: 1;
+}
+
+
+/********************/
+/********VÍDEO*******/
+/********************/
+
+.video-area{
+    background-image: url("imagenes/background-section-video.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-top: 4px solid purple;
+}
+
+.video-capa{
+    background: rgba(13, 7, 29, 0.35);
+    width: 100%;
+    height: 100%;
+    padding: 150px 0;
+}
+
+.video-content{
+    width: 100%;
+    height: auto;
+}
+
+.video-content h3{
+    font-size: 70px;
+    line-height: 80px;
+    color: mediumslateblue;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.video-content span{
+    font-size: 24px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    display: block;
+    margin-top: 33px;
+    margin-bottom: 33px;
+    text-align: center;
+}
+
+.video-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 102px;
+    height: 102px;
+    border-radius: 100%;
+    background-color: red;
+}
+
+.video-link:hover{
+    background-color: white;
+}
+
+.video-link i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.video-link i:hover{
+    color: #101316;
+}
+
+
+/********************/
+/*******ABOUT********/
+/********************/
+
+.about-area{
+    display: block;
+    padding: 90px 0;
+    background-color: #101316;
+    height: auto;
+    border-top: 4px solid purple;
+    background-image: url("imagenes/background-about.jpg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.about-logo{
+    height: auto;
+    max-width: 40%;
+    padding: 0 15px;
+    position: relative;
+    border-style: none;
+    text-align: left;
+    animation-name: about-logo;
+    animation-duration: 25s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.about-text{
+    max-width: 50%;
+    position: relative;
+    padding: 0 15px;
+    margin-left: 100px;
+    margin-bottom: 130px;
+}
+
+.about-text h1{
+    font-size: 46px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: mediumslateblue;
+}
+
+.about-text p{
+    width: 80%;
+    color: aliceblue;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: 2px;
+}
+
+/********************/
+/*****LEGALIDAD******/
+/********************/
+
+.legalidad-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #101316;
+    color: white;
+    padding: 20px 0px;
+}
+
+.legalidad-area h4{
+    color: mediumpurple;
+}
+
+.legalidad-clicker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.legalidad-clicker img{
+    width: 35px;
+    height: 35px;
+    color: purple;
+    cursor: pointer;
+}
+
+.legalidad-info{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 180px;
+    line-height: 30px;
+}
+
+.legalidad-info div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.legalidad-info div h4{
+    margin: 18px 0px;
+}
+
+.legalidad-info div a{
+    text-decoration: none;
+    color: white;
+}
+
+.legalidad-info div a:hover{
+    color: mediumpurple;
+}
+
+/********************/
+/*******FOOTER*******/
+/********************/
+
+.footer-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: purple;
+    color: white;
+}
+
+.footer-area div{
+    width: auto;
+}
+
+.footer-area img{
+    width: 40px;
+    height: 40px;
+    padding: 0 18px;
+}
+.footer-phone{
+    display: flex;
+    gap: 14px;
+}
+
+.footer-phone .phone{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-rights{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer-social{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.footer-social a:hover{
+    transition: all .4s;
+    background-color: white;
+    padding: 4px 0;
+    border-radius: 100%;
+}
+
+/*********************/
+/*****RESPONSIVE*****/
+/*******************/
+
+@media (max-width: 1300px){
+    
+    .logo-menu{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1084px){
+
+    body{
+        z-index: 0;
+    }
+
+    .header-area{
+        height: 80px;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .nav-area{
+        width: 40%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    
+    /*MENÚ*/
+    
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px 0px;
+        background-color: rgba(0, 0, 0, .85);
+        list-style: none;
+        position: fixed;
+        left: 100%;
+        top: 0px;
+        width: 100%;
+
+        height: 100%;
+        overflow-y: auto;
+
+        transition: all .5s;
+    }
+    
+    .menu .option-menu{
+        font-size: 24px;
+        line-height: 80px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    .menu .option-menu .menu-link{
+        text-decoration: none;
+        color: purple;
+        padding: 10px;
+        font-weight: 600;
+    }
+    
+    .menu .option-menu .menu-link:hover{
+        color: white;
+        transition: all .5s;
+        background-color: rgba(0, 0, 0, .35);
+        border-radius: 8px;
+    }
+
+    .button-menu{
+        width: 172px;
+        height: 44px;
+        margin-top: 80px;
+        border-radius: 45px;
+        background-color: purple;
+        color: white;
+        padding: 10px 45px;
+        border: none;
+        text-align: start;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    .button-menu:hover{
+        background-color: white;
+    }
+
+    .icono-menu{
+        display: block;
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
+        transition: all .5s;
+        z-index: 2;
+    }
+
+    .icono-menu:hover{
+        color: white;
+    }
+
+    #check:checked ~ .menu{
+        left: 0;
+        z-index: 1;
+    }
+
+    #check:checked ~ .icono-menu{
+        color: white;
+    }
+
+    .slider-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        margin: auto;
+        padding-top: 12%;
+    }
+    
+    .text-slider{
+        margin-bottom: 75px;
+        margin-top: 30px;
+    }
+
+    .text-slider p{
+        width: 130%;
+        font-size: 24px;
+        margin-top: 40px;
+        line-height: 27px;
+        color: white;
+    }
+    
+    .text-slider h1{
+      font-family: 'Fira Sans', sans-serif;
+      margin: 0;
+      font-size: 57px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: mediumslateblue;
+    }
+
+    .slider-button{
+        width: 172px;
+        height: 44px;
+        margin-top: 30px;
+        border-radius: 45px;
+        background-color: #ffbe33;
+        color: maroon;
+        padding: 10px 45px;
+        border: none;
+        text-align: center;
+        font-size: 13px;
+        font-family: 'Fira Sans', sans-serif;
+        cursor: pointer;
+    }
+
+    .video-area{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-top: 4px solid purple;
+    }
+    
+    .video-capa{
+        background: rgba(13, 7, 29, 0.35);
+        width: 100%;
+        height: 100%;
+        padding: 175px 0;
+    }
+    
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .about-text{
+        max-width: 100%;
+        margin-bottom: 90px;
+    }
+    
+    .about-text h1{
+        font-size: 46px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: mediumpurple;
+    }
+    
+    .about-text p{
+        width: 80%;
+        color: aliceblue;
+        font-size: 16px;
+        font-family: 'Fira Sans', sans-serif;
+        line-height: 1.5;
+    }
+
+    .about-logo{
+        height: 180px;
+        max-width: 250px;
+        position: relative;
+        border-style: none;
+        animation-name: about-logo;
+        animation-duration: 25s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        padding: 30px 50px;
+    }
+
+    .legalidad-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        text-align: center;
+    }
+
+
+    .footer-area{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        background-color: purple;
+        color: black;
+    }
+
+    .footer-area div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    
+
+    
+
+}
+
+    /*efecto hamburguesa giratoria*/
+
+    @keyframes about-logo {
+
+        from{
+            transform: rotate(0deg);
+        }to{
+            transform: rotate(360deg);
+        }
+    }

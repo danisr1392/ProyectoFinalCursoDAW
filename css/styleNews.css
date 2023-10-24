@@ -1,0 +1,524 @@
+/* 
+    Created on : 3 oct 2023, 15:10:29
+    Author     : aKaDanieee
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Sans:ital,wght@1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.header-area{
+    width: 100%;
+    padding: 15px 0;
+    background-color: mediumslateblue;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid white;
+}
+
+.nav-area{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.scroll{
+    position: fixed;
+    display: block;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 54px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+    color: black;
+    border: 2px solid black;
+    background-color: purple;;
+    z-index: 5;
+    text-align: center;
+    line-height: 38px;
+    transition: all .5s ease-in-out;
+    transition-duration: 500ms;
+    border-radius: 6px;
+}
+
+.scroll:hover{
+    background-color: white;
+    color: purple;
+    border: 2px solid black;
+}
+
+#check{
+    display: none;
+}
+
+/********************/
+/*******MENÚ*******/
+/********************/
+
+.menu{
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.menu .option-menu{
+    font-size: 26px;
+    margin: 0 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.logo-menu{
+    width: 250px;
+    height: 150px;
+    margin: 0 30px;
+}
+
+.menu .option-menu .menu-link{
+    text-decoration: none;
+    color: purple;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+}
+
+.menu .option-menu .menu-link:hover{
+    color: white;
+    transition: all .5s;
+    background-color: rgba(0, 0, 0, .35);
+    border-radius: 8px;
+    background-color: mediumpurple;
+}
+
+.button-menu{
+    width: 172px;
+    height: 44px;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+    position: relative;
+    white-space: nowrap;
+}
+
+.user-menu{
+    width: 150px;
+    height: 44px;
+    border-radius: 45px;
+    margin-top: 80px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: start;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.user-menu:hover{
+    background-color: white;
+    color: purple;
+}
+
+.button-menu:hover{
+    background-color: white;
+    color: purple;
+}
+
+.icono-menu{
+    font-size: 25px;
+    color: purple;
+    background: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+
+    display: none;
+}
+
+/********************/
+/*****NOVEDADES******/
+/********************/
+
+.ofertas-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ofertas-area span{
+    width: 120px;
+    height: 900px;
+    background-color: mediumslateblue;
+}
+
+.ofertas-pics{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ofertas-area img{
+    width: 100%;
+    height: 900px;
+    z-index: 0;
+}
+
+.back-button{
+    left: 0rem;
+    z-index: 1;
+    height: 200px;
+    width: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.back-button:hover{
+    background: rgba(0, 0, 0, .55);
+}
+
+.forw-button{
+    right: 0rem;
+    z-index: 1;
+    height: 200px;
+    width: 150px;
+    font-size: 60px;
+    font-weight: bold;
+    border-style: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.forw-button:hover{
+    background: rgba(0, 0, 0, .55);
+}
+
+/********************/
+/*****LEGALIDAD******/
+/********************/
+
+.legalidad-area{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #101316;
+    color: white;
+    padding: 20px 0px;
+}
+
+.legalidad-area h4{
+    color: mediumpurple;
+}
+
+.legalidad-clicker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.legalidad-clicker img{
+    width: 35px;
+    height: 35px;
+    color: purple;
+    cursor: pointer;
+}
+
+.legalidad-info{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    gap: 180px;
+    line-height: 30px;
+}
+
+.legalidad-info div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.legalidad-info div h4{
+    margin: 18px 0px;
+}
+
+.legalidad-info div a{
+    text-decoration: none;
+    color: white;
+}
+
+.legalidad-info div a:hover{
+    color: mediumpurple;
+}
+
+/********************/
+/*******FOOTER*******/
+/********************/
+
+.footer-area{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    background-color: purple;
+    color: white;
+}
+
+.footer-area div{
+    width: auto;
+}
+
+.footer-area img{
+    width: 40px;
+    height: 40px;
+    padding: 0 18px;
+}
+.footer-phone{
+    display: flex;
+    gap: 14px;
+}
+
+.footer-phone .phone{
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-rights{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.footer-social{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.footer-social a:hover{
+    transition: all .4s;
+    background-color: white;
+    padding: 4px 0;
+    border-radius: 100%;
+}
+
+/*********************/
+/*****RESPONSIVE*****/
+/********************/
+
+@media (max-width: 1300px){
+    
+    .logo-menu{
+        display: none;
+    }
+    
+    .ofertas-area span{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1084px){
+    
+    body{
+        z-index: 0;
+    }
+    
+    .header-area{
+        height: 0px;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    
+    .nav-area{
+        width: 40%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+        
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        background-color: rgba(0, 0, 0, .85);
+        list-style: none;
+        position: fixed;
+        left: 100%;
+        top: 0px;
+        width: 100%;
+
+        height: 100%;
+        overflow-y: auto;
+
+        transition: all .5s;
+        z-index: 2;
+    }
+    
+    .menu .option-menu{
+        font-size: 24px;
+        margin: 0px 20px;
+        line-height: 80px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+    
+    .menu .option-menu .menu-link{
+        text-decoration: none;
+        color: purple;
+        padding: 10px;
+        font-weight: 600;
+    }
+    
+    .menu .option-menu .menu-link:hover{
+        color: white;
+        transition: all .5s;
+        background-color: rgba(0, 0, 0, .35);
+        border-radius: 8px;
+    }
+
+    .button-menu{
+        width: 172px;
+        height: 44px;
+        margin-top: 80px;
+        border-radius: 45px;
+        background-color: purple;
+        color: white;
+        padding: 10px 45px;
+        border: none;
+        text-align: start;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .5s;
+    }
+
+    .button-menu:hover{
+        background-color: white;
+    }
+
+    .icono-menu{
+        display: block;
+        position: fixed;
+        right: 0;
+        margin-right: 10px;
+        transition: all .5s;
+        z-index: 3;
+    }
+
+    .icono-menu:hover{
+        color: white;
+    }
+
+    #check:checked ~ .menu{
+        left: 0;
+        z-index: 2;
+    }
+    
+    #check:checked ~ .icono-menu{
+        color: white;
+    }
+    
+    #check:checked ~ .ofertas-area button:hover{
+        background-color: red;
+    }
+    
+    .scroll{
+        z-index: 1;
+    }
+    
+    .ofertas-area button{
+        z-index: 1;
+    }
+    
+    .ofertas-area span{
+        display: none;
+    }
+    
+    .ofertas-pics img{
+        width: 100%;
+        height: 600px;
+    }
+    
+    .legalidad-info{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        text-align: center;
+    }
+
+    .footer-area{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        background-color: purple;
+        color: black;
+    }
+
+    .footer-area div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+}

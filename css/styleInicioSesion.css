@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fira+Sans:ital,wght@1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+.background-area{
+    position: relative;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../css/imagenes/fondoinicio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.background-area h1{
+    color: mediumpurple;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: .75cap;
+    padding-bottom: 50px;
+}
+
+.background-capa{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .55);
+    position: absolute;
+}
+
+.content-area{
+    padding: 150px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .option-menu{
+    margin: 0 40px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.menu .option-menu .menu-link{
+    width: 172px;
+    height: 44px;
+    margin-top: 8%;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menu .option-menu .menu-link:hover{
+    background-color: white;
+    color: purple;
+}
+
+/********************/
+/*****FORMULARIO*****/
+/********************/
+
+.form-registro{
+    background-color: mediumslateblue;
+    width: 60%;
+    height: auto;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-registro h1{
+    color: white;
+}
+
+.form-registro label{
+    color: purple;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+.form-registro input{
+    width: 90%;
+    border: none;
+    background: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 3px 3px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.form-registro input::placeholder{
+    color: whitesmoke;
+}
+
+.form-registro input:focus{
+    border-bottom: 2px solid white;
+}
+
+.button-reg{
+    width: 100%;
+    height: 44px;
+    margin-top: 80px;
+    border-radius: 45px;
+    background-color: purple;
+    color: white;
+    padding: 10px 45px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.button-reg:hover{
+    background-color: black;
+    color: purple;
+}
+
+.form-registro .registro{
+    margin-top: 40px;
+}
+
+.form-registro .registro-link{
+    text-decoration: none;
+    color: white;
+    transition: .5s all;
+}
+
+.form-registro .registro-link:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width: 954px){
+
+    body{
+        z-index: 0;
+    }
+
+    .background-area{
+        width: auto;
+        height: 1000px;
+        background-image: url(./imagenes/fondoinicio.jpg);
+        background-size: cover;
+        background-position: left;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menu .option-menu .menu-link{
+        width: 172px;
+        height: 44px;
+        margin-top: 8%;
+        border-radius: 45px;
+        background-color: purple;
+        color: white;
+        padding: 10px 45px;
+        border: none;
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    
+    .menu .option-menu .menu-link:hover{
+        background-color: white;
+    }
+
+    .content-area{
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-width: 80%;
+    }
+
+    .content-area h1{
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+        font-size: 40px;
+        text-align: center;
+        letter-spacing: .75cap;
+        padding-bottom: 50px;
+    }
+
+    .form-registro{
+        background-color: mediumslateblue;
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15%;
+    }
+    
+    .form-registro label{
+        color: white;
+        font-family: 'Fira Sans', sans-serif;
+        width: 90%;
+        line-height: 60px;
+        font-size: 20px;
+        float: inline-start;
+    }
+    
+    .form-registro input{
+        width: 90%;
+        border: none;
+        background: none;
+        border-bottom: 2px solid black;
+        outline: none;
+        padding: 3px 3px;
+    }
+    
+    .form-registro input:focus{
+        border-bottom: 2px solid white;
+    }
+}
