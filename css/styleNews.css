@@ -176,7 +176,7 @@
 .ofertas-area span{
     width: 120px;
     height: 900px;
-    background-color: mediumslateblue;
+    background-color: #101316;
 }
 
 .ofertas-pics{
@@ -205,6 +205,7 @@
     cursor: pointer;
     position: absolute;
     border-radius: 100%;
+    color: white;
 }
 
 .back-button:hover{
@@ -223,6 +224,7 @@
     cursor: pointer;
     position: absolute;
     border-radius: 100%;
+    color: white;
 }
 
 .forw-button:hover{
@@ -388,6 +390,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         margin: 0px;
         background-color: rgba(0, 0, 0, .85);
         list-style: none;
