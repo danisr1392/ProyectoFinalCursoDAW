@@ -12,7 +12,7 @@
 
 .background-area{
     position: relative;
-    height: 1100px;
+    height: 1050px;
     display: flex;
     flex-direction: column;
     background-image: url(./imagenes/background-menu.jpg);
@@ -36,9 +36,7 @@
     position: absolute;
 }
 
-.menu{
-    padding: 40px 0;
-}
+
 
 .menu .option-menu{
     margin: 0 40px;
@@ -179,7 +177,7 @@
 
     .background-area{
         width: auto;
-        height: 1000px;
+        height: 1200px;
         background-image: url(./imagenes/background-menu.jpg);
         background-size: cover;
         background-position: center;
